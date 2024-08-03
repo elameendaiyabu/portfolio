@@ -1,5 +1,10 @@
-import HomePage from "@/components/homePage";
+import { HomePage } from "@/components/homePage";
+import { content } from "@/components/contents";
 
-export default function Home() {
-  return <HomePage />;
+export default function Page() {
+  return (
+    <div className="">
+      <HomePage content={content} />
+    </div>
+  );
 }
