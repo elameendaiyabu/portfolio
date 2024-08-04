@@ -54,7 +54,7 @@ export const HomePage = ({
       ref={ref}
     >
       <CardSpotlight className="flex relative bg-slate-900 flex-col lg:flex-row-reverse lg:justify-between">
-        <div className="lg:hidden flex flex-col gap-4 ">
+        <div className="lg:hidden flex w-full flex-col gap-4 ">
           <h2 className="scroll-m-20 text-2xl font-extrabold tracking-tight ">
             El-ameen Daiyabu
           </h2>
@@ -83,7 +83,7 @@ export const HomePage = ({
             />
           </div>
         </div>
-        <div className="div relative flex items-start lg:ml-56 lg:w-1/2 lg:px-4">
+        <div className="div relative w-full flex items-start md:ml-0 lg:ml-40 lg:w-1/2 lg:px-4">
           <div className=" lg:pr-0 max-w-2xl">
             {content.map((item, index) => (
               <div key={item.title + index} className="my-20">

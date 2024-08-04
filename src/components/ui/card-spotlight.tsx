@@ -34,7 +34,7 @@ export const CardSpotlight = ({
   return (
     <div
       className={cn(
-        "group/spotlight p-10 rounded-md relative bg-black dark:border-neutral-800",
+        "group/spotlight p-10 flex justify-center items-center lg:flex-row lg:items-start lg:justify-start rounded-md relative bg-black dark:border-neutral-800",
         className,
       )}
       onMouseMove={handleMouseMove}
