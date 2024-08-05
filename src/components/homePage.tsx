@@ -18,7 +18,7 @@ export const HomePage = ({
   contentClassName,
 }: {
   content: {
-    title: string;
+    title: string | any;
     description: string | any;
     content?: React.ReactNode | any;
   }[];
