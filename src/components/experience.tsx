@@ -5,7 +5,7 @@ export default function ExperienceSection() {
         return (
           <div
             key={index}
-            className="flex flex-col p-2 hover:rounded-xl hover:shadow-white hover:shadow-sm hover:bg-muted gap-3 lg:flex-row"
+            className="flex flex-col p-2 lg:p-5 hover:rounded-xl hover:shadow-white hover:shadow-sm hover:bg-muted gap-3 lg:flex-row"
           >
             <div className="text-sm lg:max-w-36 ">{`${work.startTime} - ${work.endTime}`}</div>
             <div className="flex flex-col gap-3">
@@ -57,22 +57,6 @@ const workExperience = [
     workDescription:
       "Worked with the back-end team to develop and ship clean and user-friendly components.",
     tags: ["JavaScript", "TypeScript", "React", "React Router"],
-  },
-  {
-    startTime: "March, 2024",
-    endTime: "July, 2024",
-    role: "Full-Stack Developer",
-    companyName: "Nile Connect",
-    workDescription:
-      "Developed, maintained, and pushed production code for features such as real-time communication between users.",
-    tags: [
-      "JavaScript ",
-      "TypeScript ",
-      "React ",
-      "Next.js ",
-      "Node.js ",
-      "PostgreSQL",
-    ],
   },
   {
     startTime: "March, 2024",

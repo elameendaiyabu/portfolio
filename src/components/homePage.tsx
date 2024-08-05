@@ -11,6 +11,7 @@ import {
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { CardSpotlight } from "./ui/card-spotlight";
+import Link from "next/link";
 
 export const HomePage = ({
   content,
@@ -32,9 +33,7 @@ export const HomePage = ({
   const cardLength = content.length;
 
   useMotionValueEvent(scrollYProgress, "change", (latest) => {
-    const cardsBreakpoints = content.map(
-      (_, index) => index / cardLength + 0.115,
-    );
+    const cardsBreakpoints = content.map((_, index) => index / cardLength);
     const closestBreakpointIndex = cardsBreakpoints.reduce(
       (acc, breakpoint, index) => {
         const distance = Math.abs(latest - breakpoint);
@@ -50,7 +49,7 @@ export const HomePage = ({
 
   return (
     <motion.div
-      className="h-screen overflow-y-auto  bg-slate-900 space-x-10 rounded-md "
+      className="h-screen overflow-y-auto overflow-x-hidden bg-slate-900 space-x-10 rounded-md "
       ref={ref}
     >
       <CardSpotlight className="flex relative bg-slate-900 flex-col lg:flex-row-reverse lg:justify-between">
@@ -84,9 +83,12 @@ export const HomePage = ({
           </div>
         </div>
         <div className="div relative w-full flex items-start md:ml-0 lg:ml-40 lg:w-1/2 lg:px-4">
-          <div className=" lg:pr-0 max-w-2xl">
+          <div className=" lg:pr-0 max-w-2xl ">
             {content.map((item, index) => (
-              <div key={item.title + index} className="my-20">
+              <div
+                key={item.title + index}
+                className="my-20 flex flex-col gap-10 lg:gap-2 "
+              >
                 <motion.h2
                   initial={{
                     opacity: 0,
@@ -94,7 +96,7 @@ export const HomePage = ({
                   animate={{
                     opacity: activeCard === index ? 1 : 0.3,
                   }}
-                  className="lg:text-2xl text-lg font-bold text-slate-100"
+                  className="lg:text-2xl text-lg sticky lg:static backdrop-blur-sm top-0 font-bold text-slate-100"
                 >
                   {item.title}
                 </motion.h2>
@@ -135,22 +137,33 @@ export const HomePage = ({
             {content[activeCard].content ?? null}
           </div>
           <div className="w-full flex gap-5">
-            <FontAwesomeIcon
-              icon={faXTwitter}
-              className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
-            />
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
-            />
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
-            />
+            <Link href="https://x.com/elameendk" target="_blank">
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
+            <Link href="https://github.com/elameendaiyabu" target="_blank">
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
+            <Link href="https://instagram.com/daiyabuu_" target="_blank">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
+            <Link
+              href="https://linkedin.com/in/el-ameen-daiyabu"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
           </div>
         </div>
       </CardSpotlight>

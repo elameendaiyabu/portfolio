@@ -18,7 +18,7 @@ export default function AboutSection() {
         souls games, reading manga, or hanging out with friends.
       </div>
       <div className="flex flex-col gap-3">
-        <div>Few technologies I work with:</div>
+        <div>Some technologies I work with:</div>
         <div className="grid grid-cols-2">
           <div className="flex gap-3 text-[#cba6f7] items-center">
             <FontAwesomeIcon icon={faArrowRight} />
