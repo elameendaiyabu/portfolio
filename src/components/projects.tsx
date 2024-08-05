@@ -14,14 +14,14 @@ export default function ProjectSection() {
             <div className="text-sm lg:max-w-36 ">
               <Image
                 src={`${project.image}`}
-                alt={`${project.description}`}
+                alt={`${project.name}`}
                 width={150}
                 height={150}
                 className="border-2 border-muted-foreground"
               />
             </div>
             <div className="flex flex-col gap-3">
-              <div className="text-foreground text-base">{`${project.name}`}</div>
+              <div className="lg:text-foreground text-[#cba6f7] text-lg">{`${project.name}`}</div>
               <div className="text-[1rem] text-wrap lg:max-w-[27rem]">
                 {project.description}
               </div>
