@@ -10,6 +10,7 @@ export default function ProjectSection() {
             href={`${project.link}`}
             key={index}
             className="flex flex-col-reverse p-2 lg:p-5 hover:rounded-xl hover:shadow-white hover:shadow-sm hover:bg-muted gap-3 lg:flex-row"
+            target="_blank"
           >
             <div className="text-sm lg:max-w-36 ">
               <Image
