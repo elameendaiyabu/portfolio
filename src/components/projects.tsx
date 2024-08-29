@@ -51,4 +51,12 @@ const projects = [
       "A GPT learning recommendation system that suggests learning resources to users based on specific inputs.",
     tags: ["Next.js ", "TypeScript", "Gemini API"],
   },
+  {
+    image: "/sudoku-solver.png",
+    name: "sudoku solver",
+    link: "https://github.com/elameendaiyabu/go-sudoku-solver",
+    description:
+      "a command-line sudoku solver built with go that uses a back-tracking algorithm.",
+    tags: ["go", "bubble tea", "command-line"],
+  },
 ];
