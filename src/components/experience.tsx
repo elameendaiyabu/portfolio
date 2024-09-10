@@ -32,46 +32,72 @@ export default function ExperienceSection() {
 
 const workExperience = [
   {
-    startTime: "July, 2022",
-    endTime: "Oct, 2022",
-    role: "Software Engineer Intern",
-    companyName: "Nigerian Communications Commission",
-    workDescription:
-      "I assisted in writing test for various features and fixes. Also, i participated in code reviews.",
+    startTime: "April, 2023",
+    endTime: "July, 2023",
+    role: "Front-End Developer",
+    companyName: "NigeriaMyWay",
+    workDescription: (
+      <div>
+        <li>
+          Developed and maintained responsive websites using HTML, CSS,
+          JavaScript, and React.
+        </li>
+        <li>
+          Optimized web performance through code splitting, lazy loading, and
+          efficient asset management.
+        </li>
+        <li>
+          Collaborated with UI/UX designers to create intuitive and visually
+          appealing interfaces, ensuring alignment with design specifications.
+        </li>
+      </div>
+    ),
     tags: ["JavaScript ", "TypeScript", "React"],
   },
   {
-    startTime: "July, 2023",
-    endTime: "Oct, 2023",
-    role: "I.T Intern",
-    companyName: "The Securities & Exchange Commission",
-    workDescription:
-      "Supported the IT team in managing and maintaining network infrastructure, including servers, routers, and switches.",
-    tags: ["Command Line", "PowerShell", "Arch-Linux"],
-  },
-  {
-    startTime: "Jan, 2024",
-    endTime: "March, 2024",
-    role: "Front-End Developer",
-    companyName: "NigeriaMyWay",
-    workDescription:
-      "Worked with the back-end team to develop and ship clean and user-friendly components.",
-    tags: ["JavaScript", "TypeScript", "React", "React Router"],
-  },
-  {
-    startTime: "March, 2024",
-    endTime: "July, 2024",
+    startTime: "Oct, 2023",
+    endTime: "Jun, 2024",
     role: "Full-Stack Developer",
-    companyName: "Nile Connect",
-    workDescription:
-      "Developed, maintained, and pushed production code for features such as real-time communication between users.",
-    tags: [
-      "JavaScript ",
-      "TypeScript ",
-      "React ",
-      "Next.js ",
-      "Node.js ",
-      "PostgreSQL",
-    ],
+    companyName: "Learnie",
+    workDescription: (
+      <div>
+        <li>
+          Collaborated with cross-functional teams to gather requirements and
+          design scalable solutions for client projects.
+        </li>
+        <li>
+          Created secure authentication systems using technologies like OAuth
+          and JWT for user login and authorization.
+        </li>
+        <li>
+          Developed RESTful APIs using Node.js framework for seamless
+          communication between front-end and back-end.
+        </li>
+      </div>
+    ),
+    tags: ["React ", "Next.JS", "Node JS", "Supabase", "PostgreSQL"],
+  },
+  {
+    startTime: "July, 2024",
+    endTime: "Present",
+    role: "Golang Developer",
+    companyName: "Freelance/Self Employed",
+    workDescription: (
+      <div>
+        <li>
+          Developed and maintained scalable backend systems using go programming
+          language.
+        </li>
+        <li>
+          Designed and implemented RESTful APIs to facilitate communication
+          between frontend and backend systems.
+        </li>
+        <li>
+          Integrated third-party services and APIs into existing backend systems
+          for enhanced functionality.
+        </li>
+      </div>
+    ),
+    tags: ["Go", "RESTful API", "GORM", "Bubble TUI"],
   },
 ];

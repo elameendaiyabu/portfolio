@@ -42,7 +42,7 @@ export default function AboutSection() {
           </div>
           <div className="flex gap-3 text-[#cba6f7] items-center">
             <FontAwesomeIcon icon={faArrowRight} />
-            Tailwind CSS
+            Golang
           </div>
         </div>
       </div>
