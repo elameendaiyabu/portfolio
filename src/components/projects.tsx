@@ -53,6 +53,21 @@ const projects = [
     tags: ["Next.js ", "TypeScript", "Gemini API"],
   },
   {
+    image: "/caliphate.png",
+    name: "Caliphate Makhtaba",
+    link: "caliphate-makhtaba.vercel.app",
+    description:
+      "A book reading app with an admin dashboard that allows users to add and edit or delete books",
+    tags: ["Next.js", "supabase", "uploadThing"],
+  },
+  {
+    image: "/go-pong.png",
+    name: "Go Pong",
+    link: "https://github.com/elameendaiyabu/go-pong",
+    description: "A ping pong game built using the ebitten engine",
+    tags: ["go", "ebitten"],
+  },
+  {
     image: "/sudoku-solver.png",
     name: "sudoku solver",
     link: "https://github.com/elameendaiyabu/go-sudoku-solver",

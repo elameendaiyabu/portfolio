@@ -8,10 +8,16 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
+  faMailchimp,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { CardSpotlight } from "./ui/card-spotlight";
 import Link from "next/link";
+import {
+  faMailBulk,
+  faMailForward,
+  faMailReply,
+} from "@fortawesome/free-solid-svg-icons";
 
 export const HomePage = ({
   content,
@@ -161,6 +167,12 @@ export const HomePage = ({
             >
               <FontAwesomeIcon
                 icon={faLinkedin}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
+            <Link href="mailto:elameendaiyabu@proton.me" target="_blank">
+              <FontAwesomeIcon
+                icon={faMailBulk}
                 className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
               />
             </Link>
