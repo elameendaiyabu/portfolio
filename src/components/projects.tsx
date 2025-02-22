@@ -45,9 +45,9 @@ export default function ProjectSection() {
 
 const projects = [
   {
-    image: "/learnie.png",
-    name: "Learnie",
-    link: "https://learnie.vercel.app/",
+    image: "/resorz.png",
+    name: "Resorz.AI",
+    link: "https://resorzai.vercel.app/",
     description:
       "A GPT learning recommendation system that suggests learning resources to users based on specific inputs.",
     tags: ["Next.js ", "TypeScript", "Gemini API"],
@@ -55,7 +55,7 @@ const projects = [
   {
     image: "/caliphate.png",
     name: "Caliphate Makhtaba",
-    link: "caliphate-makhtaba.vercel.app",
+    link: "https://caliphate-makhtaba.vercel.app",
     description:
       "A book reading app with an admin dashboard that allows users to add and edit or delete books",
     tags: ["Next.js", "supabase", "uploadThing"],

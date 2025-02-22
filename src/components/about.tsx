@@ -44,6 +44,10 @@ export default function AboutSection() {
             <FontAwesomeIcon icon={faArrowRight} />
             Golang
           </div>
+          <div className="flex gap-3 text-[#cba6f7] items-center">
+            <FontAwesomeIcon icon={faArrowRight} />
+            Rust
+          </div>
         </div>
       </div>
     </div>
