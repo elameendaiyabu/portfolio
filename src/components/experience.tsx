@@ -79,7 +79,7 @@ const workExperience = [
   },
   {
     startTime: "July, 2024",
-    endTime: "Present",
+    endTime: "Jan,2025",
     role: "Golang Developer",
     companyName: "Freelance/Self Employed",
     workDescription: (

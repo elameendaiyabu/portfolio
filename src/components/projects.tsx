@@ -45,6 +45,13 @@ export default function ProjectSection() {
 
 const projects = [
   {
+    image: "/rave-plug.png",
+    name: "Rave Plug",
+    link: "https://rave-plug.vercel.app/",
+    description: "A real-time events ticket marketplace ",
+    tags: ["Next.js ", "Convex", "Paystack API"],
+  },
+  {
     image: "/resorz.png",
     name: "Resorz.AI",
     link: "https://resorzai.vercel.app/",
