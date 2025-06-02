@@ -8,16 +8,11 @@ import {
   faGithub,
   faInstagram,
   faLinkedin,
-  faMailchimp,
   faXTwitter,
 } from "@fortawesome/free-brands-svg-icons";
 import { CardSpotlight } from "./ui/card-spotlight";
 import Link from "next/link";
-import {
-  faMailBulk,
-  faMailForward,
-  faMailReply,
-} from "@fortawesome/free-solid-svg-icons";
+import { faMailBulk } from "@fortawesome/free-solid-svg-icons";
 
 export const HomePage = ({
   content,

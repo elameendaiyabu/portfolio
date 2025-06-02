@@ -18,6 +18,19 @@ export const content = [
     ),
   },
   {
+    title: <div id="projects">PROJECTS</div>,
+    description: <ProjectSection />,
+    content: (
+      <div className="h-full flex flex-col gap-4  w-full bg-[] text-white">
+        <span className="text-muted-foreground flex flex-col gap-4 ">
+          <Link href="/#about">ABOUT</Link>
+          <Link href="/#experience">EXPERIENCE</Link>
+        </span>
+        <Link href="/#projects">PROJECTS</Link>
+      </div>
+    ),
+  },
+  {
     title: <div id="experience">EXPERIENCE</div>,
     description: <ExperienceSection />,
     content: (
@@ -29,19 +42,6 @@ export const content = [
         <span className="text-muted-foreground flex flex-col gap-4 ">
           <Link href="/#projects">PROJECTS</Link>
         </span>
-      </div>
-    ),
-  },
-  {
-    title: <div id="projects">PROJECTS</div>,
-    description: <ProjectSection />,
-    content: (
-      <div className="h-full flex flex-col gap-4  w-full bg-[] text-white">
-        <span className="text-muted-foreground flex flex-col gap-4 ">
-          <Link href="/#about">ABOUT</Link>
-          <Link href="/#experience">EXPERIENCE</Link>
-        </span>
-        <Link href="/#projects">PROJECTS</Link>
       </div>
     ),
   },
