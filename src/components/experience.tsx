@@ -1,6 +1,6 @@
 export default function ExperienceSection() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-10 ">
       {workExperience.toReversed().map((work, index) => {
         return (
           <div
@@ -99,5 +99,25 @@ const workExperience = [
       </div>
     ),
     tags: ["Go", "RESTful API", "GORM", "Bubble TUI"],
+  },
+  {
+    startTime: "May, 2025",
+    endTime: "ongoing",
+    role: "Fullstack Developer",
+    companyName: "LightGate Solutions",
+    workDescription: (
+      <div>
+        <li>Work mainly in the Backend.</li>
+        <li>
+          Designed and implemented RESTful APIs to facilitate communication
+          between frontend and backend systems.
+        </li>
+        <li>
+          Integrated third-party services and APIs into existing backend systems
+          for enhanced functionality.
+        </li>
+      </div>
+    ),
+    tags: ["Next js", "RESTful API", "React", "Node/Express", "Postgres DB"],
   },
 ];

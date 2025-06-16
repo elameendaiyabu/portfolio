@@ -13,7 +13,11 @@ export default function AboutSection() {
         <div className="grid grid-cols-2">
           <div className="flex gap-3 text-[#cba6f7] items-center">
             <FontAwesomeIcon icon={faArrowRight} />
-            Javascript/Typescript
+            Javascript
+          </div>
+          <div className="flex gap-3 text-[#cba6f7] items-center">
+            <FontAwesomeIcon icon={faArrowRight} />
+            Typescript
           </div>
           <div className="flex gap-3 text-[#cba6f7] items-center">
             <FontAwesomeIcon icon={faArrowRight} />
@@ -21,7 +25,11 @@ export default function AboutSection() {
           </div>
           <div className="flex gap-3 text-[#cba6f7] items-center">
             <FontAwesomeIcon icon={faArrowRight} />
-            Node.js/Express.js
+            Node.js
+          </div>
+          <div className="flex gap-3 text-[#cba6f7] items-center">
+            <FontAwesomeIcon icon={faArrowRight} />
+            Express.js
           </div>
           <div className="flex gap-3 text-[#cba6f7] items-center">
             <FontAwesomeIcon icon={faArrowRight} />

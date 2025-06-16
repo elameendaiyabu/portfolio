@@ -65,22 +65,39 @@ export const HomePage = ({
             I build the things i want and the things you want.
           </p>
           <div className="flex gap-6">
-            <FontAwesomeIcon
-              icon={faXTwitter}
-              className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
-            />
-            <FontAwesomeIcon
-              icon={faGithub}
-              className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
-            />
-            <FontAwesomeIcon
-              icon={faInstagram}
-              className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
-            />
-            <FontAwesomeIcon
-              icon={faLinkedin}
-              className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
-            />
+            <Link href="https://x.com/elameendk" target="_blank">
+              <FontAwesomeIcon
+                icon={faXTwitter}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
+            <Link href="https://github.com/elameendaiyabu" target="_blank">
+              <FontAwesomeIcon
+                icon={faGithub}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
+            <Link href="https://instagram.com/daiyabuu_" target="_blank">
+              <FontAwesomeIcon
+                icon={faInstagram}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
+            <Link
+              href="https://linkedin.com/in/el-ameen-daiyabu"
+              target="_blank"
+            >
+              <FontAwesomeIcon
+                icon={faLinkedin}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
+            <Link href="mailto:elameendaiyabu@proton.me" target="_blank">
+              <FontAwesomeIcon
+                icon={faMailBulk}
+                className="w-7 h-7 text-muted-foreground hover:cursor-pointer hover:text-white"
+              />
+            </Link>
           </div>
         </div>
         <div className="div relative w-full flex items-start md:ml-0 lg:ml-40 lg:w-1/2 lg:px-4">

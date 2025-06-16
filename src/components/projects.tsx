@@ -45,6 +45,21 @@ export default function ProjectSection() {
 
 const projects = [
   {
+    image: "/myteachr.png",
+    name: "My Teachr",
+    link: "https://my-teachr.vercel.app/",
+    description:
+      "a real-time teaching platform , integrated with an AI vocal agent",
+    tags: ["Next.js ", "Supabase", "Stripe", "Subscriptions", "Vapi AI"],
+  },
+  {
+    image: "/hirrd.png",
+    name: "HIRRD",
+    link: "https://job-portal-ng.vercel.app/",
+    description: "A modern job-matching platform",
+    tags: ["Next.js ", "Supabase", "Clerk"],
+  },
+  {
     image: "/rave-plug.png",
     name: "Rave Plug",
     link: "https://rave-plug.vercel.app/",
