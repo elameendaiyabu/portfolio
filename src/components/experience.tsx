@@ -101,8 +101,8 @@ const workExperience = [
     tags: ["Go", "RESTful API", "GORM", "Bubble TUI"],
   },
   {
-    startTime: "May, 2025",
-    endTime: "ongoing",
+    startTime: "JAN, 2025",
+    endTime: "MAY, 2025",
     role: "Fullstack Developer",
     companyName: "LightGate Solutions",
     workDescription: (

@@ -18,11 +18,7 @@ export const content = [
     ),
   },
   {
-    title: (
-      <div id="experience" className="md:mt-20">
-        EXPERIENCE
-      </div>
-    ),
+    title: <div id="experience">EXPERIENCE</div>,
     description: <ExperienceSection />,
     content: (
       <div className="h-full w-full flex flex-col gap-4 bg-[] text-white">
