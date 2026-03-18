@@ -25,7 +25,7 @@ export const HomePage = ({
   }[];
   contentClassName?: string;
 }) => {
-  const [activeCard, setActiveCard] = React.useState(0);
+  const [activeCard, setActiveCard] = React.useState(1);
   const ref = useRef<any>(null);
   const { scrollYProgress } = useScroll({
     container: ref,
