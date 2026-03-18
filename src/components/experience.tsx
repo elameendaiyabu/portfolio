@@ -1,29 +1,46 @@
+"use client";
+import { motion } from "framer-motion";
+
 export default function ExperienceSection() {
   return (
-    <div className="flex flex-col gap-10 ">
+    <div className="flex flex-col gap-4">
       {workExperience.toReversed().map((work, index) => {
         return (
-          <div
+          <motion.div
             key={index}
-            className="flex flex-col p-2 lg:p-5 hover:rounded-xl hover:shadow-white hover:shadow-sm hover:bg-muted gap-3 lg:flex-row"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-30px" }}
+            transition={{
+              duration: 0.45,
+              delay: index * 0.07,
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
+            whileHover={{ backgroundColor: "rgba(203, 166, 247, 0.04)" }}
+            className="flex flex-col p-3 lg:p-5 rounded-xl gap-3 lg:flex-row border border-transparent hover:border-[#cba6f7]/10 transition-colors duration-300"
           >
-            <div className="text-sm lg:max-w-36 ">{`${work.startTime} - ${work.endTime}`}</div>
+            <div className="text-xs text-muted-foreground lg:max-w-36 uppercase tracking-wider pt-0.5 shrink-0">
+              {`${work.startTime} – ${work.endTime}`}
+            </div>
             <div className="flex flex-col gap-3">
-              <div className="text-foreground text-base">{`${work.role} @ ${work.companyName}`}</div>
-              <div className="text-[1rem] text-wrap lg:max-w-[27rem]">
+              <div className="text-foreground text-sm font-semibold">
+                {`${work.role} · ${work.companyName}`}
+              </div>
+              <div className="text-sm text-muted-foreground text-wrap lg:max-w-[27rem] leading-relaxed">
                 {work.workDescription}
               </div>
-              <div className="flex flex-wrap gap-2 text-sm text-background ">
-                {work.tags.map((item, index) => {
-                  return (
-                    <div key={index} className="bg-[#cba6f7] p-1 rounded-full">
-                      {item}
-                    </div>
-                  );
-                })}
+              <div className="flex flex-wrap gap-2">
+                {work.tags.map((item, i) => (
+                  <span
+                    key={i}
+                    className="text-xs px-2.5 py-0.5 rounded-full bg-[#cba6f7]/10 text-[#cba6f7] border border-[#cba6f7]/25"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
-          </div>
+          </motion.div>
         );
       })}
     </div>
@@ -79,7 +96,7 @@ const workExperience = [
   },
   {
     startTime: "July, 2024",
-    endTime: "Jan,2025",
+    endTime: "Jan, 2025",
     role: "Golang Developer",
     companyName: "Freelance/Self Employed",
     workDescription: (

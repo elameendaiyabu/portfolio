@@ -1,42 +1,58 @@
+"use client";
 import Image from "next/image";
 import Link from "next/link";
+import { motion } from "framer-motion";
+
+const MotionLink = motion(Link);
 
 export default function ProjectSection() {
   return (
-    <div className="flex flex-col gap-10">
+    <div className="flex flex-col gap-4">
       {projects.map((project, index) => {
         return (
-          <Link
+          <MotionLink
             href={`${project.link}`}
             key={index}
-            className="flex flex-col-reverse p-2 lg:p-5 hover:rounded-xl hover:shadow-white hover:shadow-sm hover:bg-muted gap-3 lg:flex-row"
             target="_blank"
+            initial={{ opacity: 0, y: 16 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true, margin: "-30px" }}
+            transition={{
+              duration: 0.45,
+              delay: index * 0.06,
+              ease: [0.25, 0.46, 0.45, 0.94],
+            }}
+            whileHover={{ backgroundColor: "rgba(203, 166, 247, 0.04)" }}
+            className="flex flex-col-reverse p-3 lg:p-5 rounded-xl gap-3 lg:flex-row border border-transparent hover:border-[#cba6f7]/10 transition-colors duration-300 group"
           >
-            <div className="text-sm lg:max-w-36 ">
+            <div className="text-sm lg:max-w-36 shrink-0">
               <Image
                 src={`${project.image}`}
                 alt={`${project.name}`}
                 width={150}
                 height={150}
-                className="border-2 border-muted-foreground"
+                className="border border-[#cba6f7]/15 rounded-sm"
               />
             </div>
             <div className="flex flex-col gap-3">
-              <div className="lg:text-foreground text-[#cba6f7] text-lg">{`${project.name}`}</div>
-              <div className="text-[1rem] text-wrap lg:max-w-[27rem]">
+              <div className="text-foreground text-sm font-semibold group-hover:text-[#cba6f7] transition-colors duration-200">
+                {`${project.name}`}
+              </div>
+              <div className="text-sm text-muted-foreground text-wrap lg:max-w-[27rem] leading-relaxed">
                 {project.description}
               </div>
-              <div className="flex flex-wrap gap-2 text-sm text-background ">
-                {project.tags.map((item, index) => {
-                  return (
-                    <div key={index} className="bg-[#cba6f7] p-1 rounded-full">
-                      {item}
-                    </div>
-                  );
-                })}
+              <div className="flex flex-wrap gap-2">
+                {project.tags.map((item, i) => (
+                  <span
+                    key={i}
+                    className="text-xs px-2.5 py-0.5 rounded-full bg-[#cba6f7]/10 text-[#cba6f7] border border-[#cba6f7]/25"
+                  >
+                    {item}
+                  </span>
+                ))}
               </div>
             </div>
-          </Link>
+          </MotionLink>
         );
       })}
     </div>
