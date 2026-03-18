@@ -119,7 +119,7 @@ const workExperience = [
   },
   {
     startTime: "JAN, 2025",
-    endTime: "MAY, 2025",
+    endTime: "Current",
     role: "Fullstack Developer",
     companyName: "LightGate Solutions",
     workDescription: (

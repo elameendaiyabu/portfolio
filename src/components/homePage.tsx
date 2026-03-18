@@ -64,7 +64,7 @@ export const HomePage = ({
     const handleScroll = () => {
       const containerRect = container.getBoundingClientRect();
       // Target point: 30% down from the container's top edge
-      const targetY = containerRect.top + containerRect.height * 0.3;
+      const targetY = containerRect.top + containerRect.height * 0;
 
       let closest = 0;
       let minDist = Infinity;

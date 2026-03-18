@@ -61,6 +61,20 @@ export default function ProjectSection() {
 
 const projects = [
   {
+    image: "/cave-erp.png",
+    name: "Cave ERP",
+    link: "https://cave-erp.com/",
+    description: "An ERP system for organizations and teams",
+    tags: ["Next.js ", "Convex", "Paystack API", "Cloudflare R2", "AWS", "PostgreSQL", "Subscriptions"],
+  },
+  {
+    image: "/rave-plug.png",
+    name: "Rave Plug",
+    link: "https://raveplugng.com/",
+    description: "A real-time events ticket marketplace ",
+    tags: ["Next.js ", "Convex", "Paystack API"],
+  },
+  {
     image: "/myteachr.png",
     name: "My Teachr",
     link: "https://my-teachr.vercel.app/",
@@ -74,13 +88,6 @@ const projects = [
     link: "https://job-portal-ng.vercel.app/",
     description: "A modern job-matching platform",
     tags: ["Next.js ", "Supabase", "Clerk"],
-  },
-  {
-    image: "/rave-plug.png",
-    name: "Rave Plug",
-    link: "https://rave-plug.vercel.app/",
-    description: "A real-time events ticket marketplace ",
-    tags: ["Next.js ", "Convex", "Paystack API"],
   },
   {
     image: "/resorz.png",
