@@ -21,7 +21,7 @@ export function Hero() {
           <span className="rise block" style={d(0.18)}>
             {first}
           </span>
-          <span className="rise block italic" style={d(0.3)}>
+          <span className="rise block " style={d(0.18)}>
             {rest.join(" ")}
           </span>
         </h1>

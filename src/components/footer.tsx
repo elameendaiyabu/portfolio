@@ -7,7 +7,7 @@ export function Footer() {
     <footer id="contact" className="scroll-mt-14">
       <Section index="04" label="Contact">
         <p className="font-display font-optical text-[clamp(2.5rem,7vw,5.5rem)] leading-[0.98] tracking-[-0.03em]">
-          Let&apos;s build <span className="italic">something.</span>
+          Let&apos;s build <span className="">something.</span>
         </p>
         <a
           href={`mailto:${site.email}`}
