@@ -1,10 +1,15 @@
-import { HomePage } from "@/components/homePage";
-import { content } from "@/components/contents";
+import { About } from "@/components/about";
+import { Experience } from "@/components/experience";
+import { Hero } from "@/components/hero";
+import { Projects } from "@/components/projects";
 
 export default function Page() {
   return (
-    <div className="">
-      <HomePage content={content} />
-    </div>
+    <>
+      <Hero />
+      <Projects />
+      <Experience />
+      <About />
+    </>
   );
 }

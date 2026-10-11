@@ -1,50 +1,23 @@
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { site, skills } from "@/data";
+import { Reveal } from "./reveal";
+import { Section } from "./section";
 
-export default function AboutSection() {
+export function About() {
   return (
-    <div className=" flex flex-col gap-4">
-      <div>
-        When I&apos;m not coding, I&apos;m usually watching one piece, playing
-        souls games, reading manga, or hanging out with friends.
-      </div>
-      <div className="flex flex-col gap-3">
-        <div>Some technologies I work with:</div>
-        <div className="grid grid-cols-2">
-          <div className="flex gap-3 text-[#cba6f7] items-center">
-            <FontAwesomeIcon icon={faArrowRight} />
-            Javascript
-          </div>
-          <div className="flex gap-3 text-[#cba6f7] items-center">
-            <FontAwesomeIcon icon={faArrowRight} />
-            Typescript
-          </div>
-          <div className="flex gap-3 text-[#cba6f7] items-center">
-            <FontAwesomeIcon icon={faArrowRight} />
-            React/Next.js
-          </div>
-          <div className="flex gap-3 text-[#cba6f7] items-center">
-            <FontAwesomeIcon icon={faArrowRight} />
-            Node.js
-          </div>
-          <div className="flex gap-3 text-[#cba6f7] items-center">
-            <FontAwesomeIcon icon={faArrowRight} />
-            Express.js
-          </div>
-          <div className="flex gap-3 text-[#cba6f7] items-center">
-            <FontAwesomeIcon icon={faArrowRight} />
-            Golang
-          </div>
-          <div className="flex gap-3 text-[#cba6f7] items-center">
-            <FontAwesomeIcon icon={faArrowRight} />
-            Rust
-          </div>
-          <div className="flex gap-3 text-[#cba6f7] items-center">
-            <FontAwesomeIcon icon={faArrowRight} />
-            Python
-          </div>
+    <Section id="about" index="03" label="About">
+      <Reveal>
+        <div className="max-w-[36rem] space-y-5 text-ink-2">
+          {site.about.map((p) => (
+            <p key={p}>{p}</p>
+          ))}
         </div>
-      </div>
-    </div>
+        <div className="mt-12 max-w-[36rem]">
+          <p className="meta text-ink-3">Technologies</p>
+          <p className="meta mt-3 leading-loose text-ink">
+            {skills.join(" · ")}
+          </p>
+        </div>
+      </Reveal>
+    </Section>
   );
 }
