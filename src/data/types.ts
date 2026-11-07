@@ -19,9 +19,28 @@ export type Experience = {
   end: string;
   role: string;
   company: string;
+  location?: string;
   bullets: string[];
-  tags: string[];
+  tags?: string[];
 };
+
+export type Education = {
+  school: string;
+  qualification: string;
+  start: string;
+  end: string;
+  location: string;
+};
+
+export type Credential = {
+  name: string;
+  detail: string;
+  date: string;
+  /** Path under /public, e.g. "/certificates/ieee.pdf" */
+  href?: string;
+};
+
+export type SkillGroup = { label: string; items: string[] };
 
 export type NavItem = { label: string; href: string };
 

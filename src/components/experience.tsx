@@ -24,7 +24,12 @@ export function Experience() {
                   <h3 className="font-display text-[1.25rem] leading-snug tracking-tight">
                     {e.role}
                   </h3>
-                  <p className="text-ink-2">{e.company}</p>
+                  <p className="text-ink-2">
+                    {e.company}
+                    {e.location && (
+                      <span className="text-ink-3"> · {e.location}</span>
+                    )}
+                  </p>
                   <ul className="mt-4 space-y-2 text-[0.95rem] text-ink-2">
                     {e.bullets.map((b) => (
                       <li key={b} className="flex gap-3">
@@ -36,7 +41,9 @@ export function Experience() {
                       </li>
                     ))}
                   </ul>
-                  <p className="meta mt-5 text-ink-3">{e.tags.join(" · ")}</p>
+                  {e.tags && e.tags.length > 0 && (
+                    <p className="meta mt-5 text-ink-3">{e.tags.join(" · ")}</p>
+                  )}
                 </div>
               </Reveal>
             </li>

@@ -4,3 +4,4 @@ export { socials } from "./socials";
 export { projects } from "./projects";
 export { experience } from "./experience";
 export { skills } from "./skills";
+export { education, memberships, certificates } from "./education";
