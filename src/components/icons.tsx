@@ -29,16 +29,6 @@ export function XIcon(p: P) {
   );
 }
 
-export function InstagramIcon(p: P) {
-  return (
-    <svg {...base} fill="none" stroke="currentColor" strokeWidth={1.6} {...p}>
-      <rect x="3" y="3" width="18" height="18" rx="5" />
-      <circle cx="12" cy="12" r="4" />
-      <circle cx="17.3" cy="6.7" r="0.6" fill="currentColor" />
-    </svg>
-  );
-}
-
 export function MailIcon(p: P) {
   return (
     <svg {...base} fill="none" stroke="currentColor" strokeWidth={1.6} {...p}>
@@ -60,7 +50,6 @@ const map: Record<SocialIcon, (p: P) => React.JSX.Element> = {
   github: GitHubIcon,
   linkedin: LinkedInIcon,
   x: XIcon,
-  instagram: InstagramIcon,
   mail: MailIcon,
 };
 

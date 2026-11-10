@@ -26,7 +26,7 @@ const plexMono = IBM_Plex_Mono({
   variable: "--font-plex-mono",
 });
 
-const description = `${site.role}. ${site.tagline}`;
+const description = `${site.role}. ${site.bio}`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(site.url),

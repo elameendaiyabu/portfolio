@@ -4,7 +4,6 @@ export const site: SiteInfo = {
   name: "El-Ameen Daiyabu Umar",
   shortName: "E. Daiyabu",
   role: "Software Developer",
-  tagline: "I build the things I want and the things you want.",
   bio: "Software developer building scalable web applications and internal tools, from database architecture and APIs to the interface, with a focus on clean, maintainable code and performance.",
   about: [
     "When I'm not coding, I'm usually watching One Piece, playing Souls games, reading manga, or hanging out with friends.",

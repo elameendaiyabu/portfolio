@@ -25,13 +25,7 @@ export function Hero() {
             {rest.join(" ")}
           </span>
         </h1>
-        <p
-          className="rise font-display mt-10 max-w-[22ch] text-[1.5rem] italic leading-snug text-ink sm:text-[1.75rem]"
-          style={d(0.5)}
-        >
-          {site.tagline}
-        </p>
-        <p className="rise mt-6 max-w-[34rem] text-ink-2" style={d(0.62)}>
+        <p className="rise mt-10 max-w-[34rem] text-ink-2" style={d(0.5)}>
           {site.bio}
         </p>
         <ul className="rise mt-8 flex flex-wrap gap-x-6 gap-y-2" style={d(0.75)}>
