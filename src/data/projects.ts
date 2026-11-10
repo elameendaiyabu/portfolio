@@ -27,12 +27,20 @@ export const projects: Project[] = [
     featured: true,
   },
   {
+    image: "/projects/fundsforyou.png",
+    name: "Funds for You",
+    href: "https://fundsforyou.app",
+    description:
+      "A searchable directory of grants, scholarships, fellowships, competitions and training programmes you can apply for.",
+    tags: ["Next.js", "TypeScript", "Tailwind CSS", "PostHog", "Python"],
+    featured: true,
+  },
+  {
     image: "/projects/hirrd.png",
     name: "HIRRD",
     href: "https://job-portal-ng.vercel.app/",
     description: "A modern job-matching platform.",
     tags: ["Next.js", "Supabase", "Clerk"],
-    featured: true,
   },
   {
     image: "/projects/resorz.png",

@@ -6,7 +6,7 @@ export const education: Education[] = [
     school: "Nile University of Nigeria",
     qualification: "M.Sc. Computer Science (in view)",
     start: "Mar 2026",
-    end: "Mar 2027",
+    end: "Current",
     location: "Abuja, Nigeria",
   },
   {
